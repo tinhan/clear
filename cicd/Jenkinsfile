@@ -1,0 +1,46 @@
+/**
+* Android Jenkinsfile
+*/
+
+node("android"){
+  stage("Checkout"){
+    checkout scm
+  }
+
+  stage ("Prepare"){
+    sh 'chmod +x ./gradlew'
+  }
+
+    stage("Build"){
+    if (params.BUILD_CONFIG == 'release') {
+      sh './gradlew clean assembleRelease' // builds app/build/outputs/apk/app-release.apk file
+    } else {
+      sh './gradlew clean assembleDebug' // builds app/build/outputs/apk/app-debug.apk
+    }
+  }
+
+  def keyStoreId = params.BUILD_CREDENTIAL_ID
+  def keyAlias = params.BUILD_CREDENTIAL_ALIAS ?: ''
+
+
+stage('Kryptowire') {
+  //using a try-catch block so the pipeline script won't fail if the krypowire plugin is not installed
+  try {
+    if (params.BUILD_CONFIG == 'release') {
+      kwSubmit filePath: "app/build/outputs/apk/release/app-release.apk", platform: 'android'
+    } else {
+      kwSubmit filePath: "app/build/outputs/apk/debug/app-debug.apk", platform: 'android'
+    }
+  } catch(Error e) {
+        e.printStackTrace()
+  }
+}
+
+ stage("Archive"){
+    if (params.BUILD_CONFIG == 'release') {
+        archiveArtifacts artifacts: 'app/build/outputs/apk/**/app-release.apk', excludes: 'app/build/outputs/apk/*-unaligned.apk'
+    } else {
+        archiveArtifacts artifacts: 'app/build/outputs/apk/**/app-debug.apk', excludes: 'app/build/outputs/apk/*-unaligned.apk'
+    }
+  }
+}
