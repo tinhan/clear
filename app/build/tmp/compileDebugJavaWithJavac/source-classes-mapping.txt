@@ -1,0 +1,12 @@
+tin/todo/clear/PrefManager.java
+ tin.todo.clear.PrefManager
+tin/todo/clear/BuildConfig.java
+ tin.todo.clear.BuildConfig
+tin/todo/clear/MainActivity.java
+ tin.todo.clear.MainActivity
+tin/todo/clear/WelcomeActivity.java
+ tin.todo.clear.WelcomeActivity
+ tin.todo.clear.WelcomeActivity$1
+ tin.todo.clear.WelcomeActivity$2
+ tin.todo.clear.WelcomeActivity$3
+ tin.todo.clear.WelcomeActivity$MyViewPagerAdapter

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_screen2">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/slide_7_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/desc_padding_2"
+            android:paddingRight="@dimen/desc_padding_2"
+            android:text="@string/slide_8_desc"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/slide_desc" />
+
+        <ImageView
+            android:layout_width="@dimen/img_width_height"
+            android:layout_height="@dimen/img_width_height"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/ic_discount" />
+
+        <EditText
+            android:id="@+id/txtNumbText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="50dp"
+            android:singleLine="true"
+            android:hint="@string/slide_email_hint">
+        </EditText>
+
+        <LinearLayout
+            android:id="@+id/laytbtns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/LstPeriodOptions" >
+            <Button
+                android:id="@+id/skip_sl8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="@string/slide_button_3"/>
+            <Button
+                android:id="@+id/join_sl8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="@string/slide_button_4" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

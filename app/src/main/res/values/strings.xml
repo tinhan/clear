@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Clear</string>
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Welcome to <B>Clear</B></string>
+    <string name="slide_1_desc"><B>Tab or Swipe</B> to begin</string>
+
+    <string name="slide_2_title">Clear sort items by <B>priority</B></string>
+    <string name="slide_2_desc">important items are highlighted at the top ....</string>
+
+    <string name="slide_3_title"><B>Tap and Hold</B> to pick an item up.</string>
+    <string name="slide_3_desc">Drag it up or down to change its priority </string>
+
+    <string name="slide_4_title">Word</string>
+    <string name="slide_4_desc">There are three navigation levels..</string>
+
+    <string name="slide_5_title"><B>Pinch together vertically</B> to </string>
+    <string name="slide_5_desc">collapse your current level up and navigate up.</string>
+
+    <string name="slide_6_title"><B>Tap on a list</B> to see its content.</string>
+    <string name="slide_6_desc"><B>Tap on a list title</B> to edit it ..</string>
+
+    <string name="slide_7_title">Use <B> Google ?</B></string>
+    <string name="slide_7_desc">Storing your lists in Google allows you to keep your data in sync across your Phone, tablet and PC.</string>
+
+    <string name="slide_8_title">Use <B> Google ?</B></string>
+    <string name="slide_8_desc">Sign up to the newsletter, and unlock a theme for your lists.</string>
+
+    <string name="slide_button_1">Not Now</string>
+    <string name="slide_button_2">Use Google</string>
+
+    <string name="slide_button_3">Skip</string>
+    <string name="slide_button_4"><B>Join</B></string>
+
+    <string name="slide_email_hint">Email Address        </string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+</resources>

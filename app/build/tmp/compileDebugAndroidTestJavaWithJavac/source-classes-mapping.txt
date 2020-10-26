@@ -1,0 +1,4 @@
+tin/todo/clear/ExampleInstrumentedTest.java
+ tin.todo.clear.ExampleInstrumentedTest
+tin/todo/clear/test/BuildConfig.java
+ tin.todo.clear.test.BuildConfig
